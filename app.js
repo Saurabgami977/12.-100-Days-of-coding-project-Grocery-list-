@@ -31,7 +31,7 @@ let localItems = JSON.parse(localStorage.getItem('grocery'));
 
 //running addtolist to add the individual items to the array and populating doms
 function addToList() {
-    if (input.value.length > 0) {
+    if (input.value.trim().length > 0) {
         itemArray.push(input.value);
         input.value = '';
         localStorage.setItem('grocery', JSON.stringify(itemArray));
