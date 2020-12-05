@@ -71,7 +71,7 @@ function populate() {
     itemArray.forEach((element, index) => {
         html += `<div class="item" id="item${index + 1}">
                         <h3 class="groceryItemName">${element}</h3>
-                        <img src="../img/trash.svg" alt="" class="deleteIcon" id="deleteIcon${index + 1}">
+                        <img src="trash.svg" alt="" class="deleteIcon" id="deleteIcon${index + 1}">
                 </div>`
 
     })
